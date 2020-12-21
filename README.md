@@ -19,3 +19,16 @@ python eval.py
 
 ## 6. Visualiazation (Under developement)
 python classify.py
+
+
+* Multi-label TEST ACCURACY 	 0.857
+
+* RECALL SCORE		 0.526
+* PRECISION SCORE	 0.769
+* F1 SCORE			 0.625
+
+* Relevant ACCURACY 	 0.885
+
+* RECALL SCORE		 0.885
+* PRECISION SCORE	 0.885
+* F1 SCORE			 0.885
