@@ -1,7 +1,0 @@
-python create_input_files.py
-
-python train.py
-
-python eval.py
-
-python classify.py
