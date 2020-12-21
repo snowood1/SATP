@@ -21,6 +21,8 @@ python eval.py
 python classify.py
 
 
+## Results:
+
 * Multi-label TEST ACCURACY 	 0.857
 
 * RECALL SCORE		 0.526
