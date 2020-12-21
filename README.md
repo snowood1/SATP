@@ -23,9 +23,9 @@ python classify.py
 
 ### Results:
 
-First Header  | Accuracy  | Recall   | Precision | Precision
-------------- | ------------- | ------------- | ------------- | -------------
-Multi-label  | 0.857  | 0.526  | 0.769 |0.625
+\ | Accuracy  | Recall   | Precision | F1
+---| ------------- | ------------- | ------------- | -------------
+Multi-label  | 0.857  | 0.526  | 0.769 | 0.625
 Relevant or Not  |  0.885  | 0.885  | 0.885  | 0.885
 
 Multi-label TEST ACCURACY 	 0.857 &emsp RECALL 0.526 &emsp PRECISION 0.769 &emsp F1 0.625
