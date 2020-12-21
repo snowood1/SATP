@@ -1,27 +1,32 @@
 # SATP_12.20
 
-## 1. Annotation pipeline
+### 1. Annotation pipeline
 
 1_annotation_pipeline-12.21.ipynb
 
-## 2. Prepare our training/ testing data
+### 2. Prepare our training/ testing data
 
 2_Preprocess-Data-12.20.ipynb
 
-## 3. Create word vector and dataloader from train.csv.
+### 3. Create word vector and dataloader from train.csv.
 python create_input_files.py
 
-## 4. Train our HAN model on train.csv
+### 4. Train our HAN model on train.csv
 python train.py
 
-## 5. Eval on our HAN model on test.csv
+### 5. Eval on our HAN model on test.csv
 python eval.py
 
-## 6. Visualiazation (Under developement)
+### 6. Visualiazation (Under developement)
 python classify.py
 
 
-## Results:
+### Results:
+
+First Header  | Second Header
+------------- | -------------
+Content Cell  | Content Cell
+Content Cell  |  \| 
 
 Multi-label TEST ACCURACY 	 0.857 &emsp RECALL 0.526 &emsp PRECISION 0.769 &emsp F1 0.625
 
