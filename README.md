@@ -23,10 +23,10 @@ python classify.py
 
 ### Results:
 
-First Header  | Second Header
-------------- | -------------
-Content Cell  | Content Cell
-Content Cell  |  \| 
+First Header  | Accuracy  | Recall   | Precision | Precision
+------------- | ------------- | ------------- | ------------- | -------------
+Multi-label  | 0.857  | 0.526  | 0.769 |0.625
+Relevant or Not  |  0.885  | 0.885  | 0.885  | 0.885
 
 Multi-label TEST ACCURACY 	 0.857 &emsp RECALL 0.526 &emsp PRECISION 0.769 &emsp F1 0.625
 
