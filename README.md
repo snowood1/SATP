@@ -23,7 +23,7 @@ python classify.py
 
 ### Results:
 
-\ | Accuracy  | Recall   | Precision | F1
+  | Accuracy  | Recall   | Precision | F1
 ---| ------------- | ------------- | ------------- | -------------
 Multi-label  | 0.857  | 0.526  | 0.769 | 0.625
 Relevant or Not  |  0.885  | 0.885  | 0.885  | 0.885
