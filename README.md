@@ -27,7 +27,3 @@ python classify.py
 ---| ------------- | ------------- | ------------- | -------------
 Multi-label  | 0.857  | 0.526  | 0.769 | 0.625
 Relevant or Not  |  0.885  | 0.885  | 0.885  | 0.885
-
-Multi-label TEST ACCURACY 	 0.857 &emsp RECALL 0.526 &emsp PRECISION 0.769 &emsp F1 0.625
-
-Relevant TEST ACCURACY 	 0.885 &emsp RECALL 0.885 &emsp PRECISION 0.885 &emsp F1 0.885
