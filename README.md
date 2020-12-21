@@ -23,8 +23,7 @@ python classify.py
 
 ## Results:
 
-Multi-label TEST ACCURACY 	 0.857
-RECALL SCORE		 0.526
+Multi-label TEST ACCURACY 	 0.857 \t RECALL SCORE		 0.526
 PRECISION SCORE	 0.769
 F1 SCORE			 0.625
 
