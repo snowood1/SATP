@@ -6,24 +6,26 @@
 
 #### 2. Prepare our training/ testing data
 
-2_Preprocess-Data-12.20.ipynb
+2_Preprocess-Data-12.27.ipynb
 
-#### 3. Create word vector and dataloader from train.csv.
+#### 3. BiLSTM Baseline Deep Learning Model
+
+3_BiLSTM.ipynb
+
+#### 4. BERT
+
+4_transformer_reduced_bert.ipynb
+
+#### 5. Baselines: Traditional Machine learning models (SVM, LR) using 2-step pipeline.
+
+5_Baselines_reduced-2-step.ipynb
+
+
+
+#### 6. HAN
+
+##### 6.1 Create word vector and dataloader from train.csv.
 python create_input_files.py
 
-#### 4. Train our HAN model on train.csv
-python train.py
-
-#### 5. Eval on our HAN model on test.csv
-python eval.py
-
-#### 6. Visualiazation (Under developement)
-python classify.py
-
-
-#### Results of HAN ( Unstable) :
-
-  /| Accuracy  | Recall   | Precision | F1
----| ------------- | ------------- | ------------- | -------------
-Multi-label  | 0.857  | 0.526  | 0.769 | 0.625
-Relevant or Not  |  0.885  | 0.885  | 0.885  | 0.885
+##### 6.2 Train and eval HAN model
+python HAN_end2end.py
