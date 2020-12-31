@@ -315,3 +315,76 @@ def adjust_learning_rate(optimizer, scale_factor):
     for param_group in optimizer.param_groups:
         param_group['lr'] = param_group['lr'] * scale_factor
     print("The new learning rate is %f\n" % (optimizer.param_groups[0]['lr'],))
+
+
+def f1_multilabel(labels, predictions):
+    f1 = 0.
+    count = 0
+    for lab, pred in zip(labels, predictions):
+        lab_den = [i for i, l in enumerate(lab) if l == 1]
+        pred_den = [i for i, p in enumerate(pred) if p == 1]
+        den = len(lab_den) + len(pred_den)
+        if den > 0:
+            count += 1
+            num = 2 * sum([1 if l == p == 1 else 0 for l, p in zip(lab, pred)])
+            f1 += (num / den)
+
+    if count == 0:
+        return 0.
+    else:
+        return f1 / count
+
+
+def accuracy_multilabel(labels, predictions):
+    acc = 0.
+    count = 0
+    for lab, pred in zip(labels, predictions):
+
+        lab_den = [i for i, l in enumerate(lab) if l == 1]
+        pred_den = [i for i, p in enumerate(pred) if p == 1]
+        den = len(set(lab_den + pred_den))
+
+        if den > 0:
+            count += 1
+            num = sum([1 if l == p == 1 else 0 for l, p in zip(lab, pred)])
+            acc += (num / den)
+
+    if count == 0:
+        return 0.
+    else:
+        return acc / count
+
+
+def precision_multilabel(labels, predictions):
+    prec = 0.
+    count = 0
+    for lab, pred in zip(labels, predictions):
+        pred_den = [i for i, p in enumerate(pred) if p == 1]
+        den = len(pred_den)
+
+        if den > 0:
+            count += 1
+            num = sum([1 if l == p == 1 else 0 for l, p in zip(lab, pred)])
+            prec += (num / den)
+
+    if count == 0:
+        return 0.
+    else:
+        return prec / count
+
+
+def recall_multilabel(labels, predictions):
+    rec = 0.
+    count = 0
+    for lab, pred in zip(labels, predictions):
+        lab_den = [i for i, l in enumerate(lab) if l == 1]
+        den = len(lab_den)
+
+        if den > 0:
+            count += 1
+            num = sum([1 if l == p == 1 else 0 for l, p in zip(lab, pred)])
+            rec += (num / den)
+    if count == 0:
+        return 0.
+    else:
+        return rec / count
