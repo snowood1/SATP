@@ -2,7 +2,8 @@
 
 #### 1. Annotation pipeline
 
-1_annotation_pipeline-12.21.ipynb
+1_annotation_parallel_2000_to_2020.ipynb
+
 
 #### 2. Prepare our training/ testing data
 
